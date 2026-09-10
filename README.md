@@ -15,7 +15,7 @@ Provides a method of adding X-Frame-Options by enqueu of adding javascript based
 
 == Installation ==
 
-1. Upload `simple-iframe-buster` to the `/wp-content/plugins/` directory
+1. Upload `fronmtiers-simple-iframe-buster` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
