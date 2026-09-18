@@ -1,0 +1,35 @@
+# Copyright (C) 2026 Edwin Bekedam
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Frontiers Simple Iframe Buster 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/frontiers-simple-iframe-buster\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-09T14:54:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: frontiers-simple-iframe-buster\n"
+
+#. Plugin Name of the plugin
+msgid "Frontiers Simple Iframe Buster"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/frontiers-simple-iframe-buster"
+msgstr ""
+
+#. Description of the plugin
+msgid "Enqueues a sitewide javascript to inhibit iframes and sends security headers. Fully compatible with PHP 8.5."
+msgstr ""
+
+#. Author of the plugin
+msgid "Edwin Bekedam"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/frontiers-wp/"
+msgstr ""
