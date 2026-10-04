@@ -3,7 +3,7 @@
 [![WordPress Compatibility](https://shields.io)](https://wordpress.org)
 [![License](https://shields.io)](LICENSE)
 
-A lightweight, efficient WordPress plugin designed to prevent unauthorized third-party websites from framing your content. By implementing a reliable client-side **Frame Buster** (Framebreaker) mechanism alongside native security headers, this utility effectively mitigates [Clickjacking and UI redress attacks](https://wikipedia.org "Framekiller - Wikipedia").
+A lightweight, efficient WordPress plugin designed to prevent unauthorized third-party websites from framing your content. By implementing a reliable client-side **Frame Buster** (Framebreaker) mechanism alongside native security headers, this utility effectively mitigates Clickjacking and UI redress attacks.
 
 ## 🚀 Features
 
@@ -15,26 +15,24 @@ A lightweight, efficient WordPress plugin designed to prevent unauthorized third
 
 ## 🛠️ Installation
 
-### 📥 Direct WordPress Install (Recommended)
-To prevent your installation from failing due to default branch name folder suffixes, always use the clean tagged release zip asset:
+### Via WordPress Dashboard
+This repository is pre-structured for clean installation. Even though GitHub appends a branch suffix to the initial download file, the internal plugin files are perfectly aligned:
 
-👉 **[Download frontiers-simple-iframe-buster.zip](https://github.com)**
-
-1. Click the link above to download the clean version asset.
+1. Click the green **Code** button at the top of this repository and select **Download ZIP**.
 2. Navigate to your WordPress Admin Dashboard > **Plugins** > **Add New**.
-3. Click **Upload Plugin**, choose the downloaded `v2.0.0.zip` file, and click **Install Now**.
+3. Click **Upload Plugin**, choose the downloaded ZIP file, and click **Install Now**.
 4. Click **Activate**.
 
 ### Via Manual Server Extraction (FTP / SSH)
-If you are deploying directly via a server terminal pipeline, target the destination folder directory explicitly:
+If you are deploying directly via a server terminal pipeline, copy the nested plugin folder into your target directory:
 
 ```bash
-# Clone the repository directly into the clean plugin slug path
-git clone https://github.com frontiers-simple-iframe-buster
-```
+# Clone the repository
+git clone https://github.com
 
-1. Confirm that the codebase resides precisely within `/wp-content/plugins/frontiers-simple-iframe-buster/`.
-2. Navigate to **Plugins** in your WordPress dashboard and click **Activate**.
+# Move only the structured plugin directory to your WordPress installation
+cp -r frontiers-simple-iframe-buster/frontiers-simple-iframe-buster /var/www/html/wp-content/plugins/
+```
 
 ## 📖 How it Works
 
@@ -69,6 +67,7 @@ Contributions are welcome! If you encounter issues, want to request features, or
 ## 📄 License
 
 Distributed under the GPLv2 License. See `LICENSE` for more information.
+
 
 
 === Frontiers Simple Iframe Buster ===
