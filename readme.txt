@@ -20,9 +20,9 @@ Provides a method of adding X-Frame-Options by enqueu of adding javascript based
 
 == Frequently Asked Questions ==
 
-= Is there a setting or options page? =
+= Can this plugin be used with Everntbrite ? =
 
-Currently no.
+It's competible with eventbrite checkout.
 
 == Screenshots ==
 
