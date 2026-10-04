@@ -19,7 +19,7 @@ The plugin operates on two distinct defense layers:
 2. **Client-Side Fallback:** It automatically enqueues a highly optimized, non-blocking JavaScript frame-breaker script. If a browser attempts to render the site within an unauthorized `<iframe` container, the script triggers a top-level location replace to break out of the framed environment.
 
 = Key Optimizations in v2.0.0 =
-* **Autoptimize Compatibility:** Scripts are structured to safely bypass structural mini-bundlers and script aggregations, ensuring your clickjacking defense remains active even when advanced caching plugins are deployed.
+* **Autoptimize Automation:** No manual setup required. The plugin automatically injects script exclusions directly into Autoptimize configuration filters. This ensures your critical frame-busting JavaScript skips optimization bundling, remaining completely functional and positionally correct at all times.
 * **Modern Environments:** Extensively tested on modern WordPress core instances up to version 7.1 and fully optimized for runtime environments powered by PHP 8.5.
 
 == Installation ==
@@ -39,11 +39,11 @@ The plugin operates on two distinct defense layers:
 = Can this plugin be used with Eventbrite? =
 Yes. This plugin is fully compatible with Eventbrite checkout workflows. It ensures that standard external transactional hooks and processing integrations continue to operate smoothly without dropping frames or interrupting customer transactions.
 
-= Does this require Apache or Nginx configuration updates? =
-No. The plugin sets the `X-Frame-Options` headers programmatically via internal PHP runtime hooks. It is purpose-built for shared hosting environments or configurations where you cannot modify the underlying web server configuration directly.
+= Do I need to manually configure Autoptimize script exclusions? =
+No. The plugin handles this natively by hooking into Autoptimize filters directly. The frame-busting logic is dynamically whitelisted and protected from script aggregation or minification errors without requiring any user intervention.
 
-= Will this break legitimate embeds like YouTube or Vimeo? =
-No. This plugin prevents *other* sites from embedding *your* site contents inside an iframe. It does not block your own site from rendering embedded content from external third parties.
+= Does this require Apache or Nginx configuration updates? =
+No. The plugin sets the `X-Frame-Options` headers programmatically via internal PHP runtime hooks.
 
 == Screenshots ==
 
@@ -54,7 +54,7 @@ No. This plugin prevents *other* sites from embedding *your* site contents insid
 * Confirmed WordPress 7.1 compatibility.
 * Confirmed PHP 8.5 compatibility.
 * Critical security updates to frame-busting logic.
-* Added explicit structural compatibility for Autoptimize setups.
+* Automatically injects exclusions into Autoptimize configuration filters.
 * Resolved asset execution issues affecting Eventbrite checkout widgets.
 
 = 1.0.0 =
