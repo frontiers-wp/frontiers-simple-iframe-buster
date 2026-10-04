@@ -1,0 +1,31 @@
+name: Generate Clean WordPress Plugin Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Package Plugin without branch suffixes
+        run: |
+          # Create a clean deployment directory matching your exact WordPress slug
+          mkdir -p frontiers-simple-iframe-buster
+          
+          # Copy all plugin repository files into the clean slug directory
+          # (Excluding git configuration and local workflow folders)
+          rsync -rc --exclude='.git*' --exclude='.github' ./ frontiers-simple-iframe-buster/
+          
+          # Compress the folder so the root directory inside the zip is strictly 'frontiers-simple-iframe-buster'
+          zip -r frontiers-simple-iframe-buster.zip frontiers-simple-iframe-buster
+
+      - name: Upload Clean Zip to GitHub Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: frontiers-simple-iframe-buster.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
