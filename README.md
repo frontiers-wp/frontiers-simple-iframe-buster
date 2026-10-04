@@ -34,6 +34,13 @@ The plugin operates on two distinct defense layers:
 2. Extract the contents and upload the entire `simple-iframe-buster` folder to your server's `/wp-content/plugins/` directory.
 3. Activate the plugin through the **Plugins** menu in the WordPress dashboard.
 
+== 🚀 Features == 
+
+* **Lightweight Footprint:** Zero impact on site performance or initial page load metrics.
+* **Instant Prevention:** Immediately forces the browser window to navigate to the top-level frame if an unauthorized embed attempt is detected.
+* **WordPress Native:** Designed specifically to integrate seamlessly with standard WordPress architectures without conflicting with core hooks.
+* **Defense in Depth:** Serves as a critical client-side fallback layer alongside server-side `X-Frame-Options` or `Content-Security-Policy` directives.
+
 == Frequently Asked Questions ==
 
 = Can this plugin be used with Eventbrite? =
