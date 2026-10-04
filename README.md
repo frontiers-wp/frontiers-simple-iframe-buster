@@ -55,15 +55,6 @@ The plugin automatically handles compatibility hooks for page builders and advan
 * **Whitelisted Environments:** Native support for the WordPress Customizer dashboard, standard admin frames, and active live previews for both **Elementor** and **Divi**.
 * **Autoptimize Compatibility:** Programmatically filters core optimization scripts to prevent `frontiers-iframe-buster.js` and associated structural inline CSS from being aggregated or broken during optimization passes.
 
-## 🤝 Contributing
-
-Contributions are welcome! If you encounter issues, want to request features, or submit pull requests:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a **Pull Request**.
-
 ## 📄 License
 
 Distributed under the GPLv2 License. See `LICENSE` for more information.
