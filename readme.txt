@@ -35,14 +35,3 @@ Currently no.
 * security update
 * compatibilty Autoptimize
 * Eventbirte compatibilty
-
-= 1.1.1 =
-* Confirmed WordPress 5.7.2 compatibilty.
-
-= 1.1 =
-* Corrected quoting issues in js files.
-
-= 1.0 =
-* Initial stable version.
-
-== Arbitrary section ==
