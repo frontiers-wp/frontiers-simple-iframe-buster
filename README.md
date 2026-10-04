@@ -8,7 +8,7 @@ Stable tag: 2.0.0
 License: GPLv2
 License URI: http://gnu.org
 
-Provides a robust method of preventing malicious site framing by delivering X-Frame-Options headers and enqueuing an optimized client-side JavaScript iframe blocker fallback.
+Provides a robust method of preventing malicious site framing by delivering optimized client-side protection.
 
 == Description ==
 
