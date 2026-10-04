@@ -16,13 +16,13 @@ A lightweight, efficient WordPress plugin designed to prevent unauthorized third
 ## 🛠️ Installation
 
 ### 📥 Direct WordPress Install (Recommended)
-Do **not** use GitHub's default green "Download ZIP" button, as it adds an invalid `-main` suffix to your WordPress plugin directory. Click the clean download link below instead:
+To prevent your installation from failing due to default branch name folder suffixes, always use the clean tagged release zip asset:
 
-👉 **[Download frontiers-simple-iframe-buster.zip](https://github.io)**
+👉 **[Download frontiers-simple-iframe-buster.zip](https://github.com)**
 
-1. Click the link above to generate a clean, correctly-named plugin archive file.
+1. Click the link above to download the clean version asset.
 2. Navigate to your WordPress Admin Dashboard > **Plugins** > **Add New**.
-3. Click **Upload Plugin**, choose the downloaded file, and click **Install Now**.
+3. Click **Upload Plugin**, choose the downloaded `v2.0.0.zip` file, and click **Install Now**.
 4. Click **Activate**.
 
 ### Via Manual Server Extraction (FTP / SSH)
