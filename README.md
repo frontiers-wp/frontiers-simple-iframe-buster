@@ -15,14 +15,14 @@ Provides a method of adding X-Frame-Options by enqueu of adding javascript based
 
 == Installation ==
 
-1. Upload `fronmtiers-simple-iframe-buster` to the `/wp-content/plugins/` directory
+1. Upload `simple-iframe-buster` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
 
-= Whats needed to run this plugin smootly?
+= Can this plugin be used with Everntbrite ? =
 
- Fully compatible with PHP 8.5 and  minimal WP5.9 and PHP8.1
+It's competible with eventbrite checkout.
 
 == Screenshots ==
 
@@ -36,11 +36,6 @@ Provides a method of adding X-Frame-Options by enqueu of adding javascript based
 * compatibilty Autoptimize
 * Eventbirte compatibilty
 
-= 1.1.1 =
-* Confirmed WordPress 5.7.2 compatibilty.
-
-= 1.1 =
-* Corrected quoting issues in js files.
 
 = 1.0 =
 * Initial stable version.
