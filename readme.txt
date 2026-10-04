@@ -3,12 +3,12 @@ Contributors: vizkr, Frontiers
 Tags: iframe, x-frame-options, security, clickjacking, autoptimize
 Requires at least: 5.9
 Tested up to: 7.1
-Requires PHP: 7.4
+Requires PHP: 8.1
 Stable tag: 2.0.0
 License: GPLv2
 License URI: http://gnu.org
 
-Provides a robust method of preventing malicious site framing by delivering X-Frame-Options headers and enqueuing an optimized client-side JavaScript iframe blocker fallback.
+Provides a robust method of preventing malicious site framing by delivering optimized client-side protection.
 
 == Description ==
 
