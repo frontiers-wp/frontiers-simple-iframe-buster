@@ -1,3 +1,76 @@
+# Frontiers Simple iFrame Buster
+
+[![WordPress Compatibility](https://shields.io)](https://wordpress.org)
+[![License](https://shields.io)](LICENSE)
+
+A lightweight, efficient WordPress plugin designed to prevent unauthorized third-party websites from framing your content. By implementing a reliable client-side **Frame Buster** (Framebreaker) mechanism alongside native security headers, this utility effectively mitigates [Clickjacking and UI redress attacks](https://wikipedia.org "Framekiller - Wikipedia").
+
+## 🚀 Features
+
+* **Lightweight Footprint:** Zero impact on site performance or initial page load metrics.
+* **Instant Prevention:** Immediately forces the browser window to navigate to the top-level frame if an unauthorized embed attempt is detected.
+* **WordPress Native:** Designed specifically to integrate seamlessly with standard WordPress architectures without conflicting with core hooks.
+* **Autoptimize Automation:** Automatically injects script and style exclusions directly into Autoptimize configuration filters.
+* **Defense in Depth:** Serves as a critical client-side fallback layer alongside server-side `X-Frame-Options` directives.
+
+## 🛠️ Installation
+
+### 📥 Direct WordPress Install (Recommended)
+Do **not** use GitHub's default green "Download ZIP" button, as it adds an invalid `-main` suffix to your WordPress plugin directory. Click the clean download link below instead:
+
+👉 **[Download frontiers-simple-iframe-buster.zip](https://github.io)**
+
+1. Click the link above to generate a clean, correctly-named plugin archive file.
+2. Navigate to your WordPress Admin Dashboard > **Plugins** > **Add New**.
+3. Click **Upload Plugin**, choose the downloaded file, and click **Install Now**.
+4. Click **Activate**.
+
+### Via Manual Server Extraction (FTP / SSH)
+If you are deploying directly via a server terminal pipeline, target the destination folder directory explicitly:
+
+```bash
+# Clone the repository directly into the clean plugin slug path
+git clone https://github.com frontiers-simple-iframe-buster
+```
+
+1. Confirm that the codebase resides precisely within `/wp-content/plugins/frontiers-simple-iframe-buster/`.
+2. Navigate to **Plugins** in your WordPress dashboard and click **Activate**.
+
+## 📖 How it Works
+
+The plugin enqueues a non-obtrusive, rendering-optimal JavaScript snippet across your site header. If the page is trapped inside an external `<iframe` or `<frame>` tag, the script breaks out of the sandboxed container:
+
+```javascript
+if (top !== self) {
+    top.location.replace(self.location.href);
+}
+```
+
+This guarantees that visitors attempting to view your site through a masked or malicious frame are instantly redirected to the legitimate, un-framed URL.
+
+## ⚙️ Configuration
+
+This plugin is designed to work **out of the box** with zero configuration required. Once activated, the iframe protection applies site-wide.
+
+### Developer Integrations
+The plugin automatically handles compatibility hooks for page builders and advanced caching layers:
+* **Whitelisted Environments:** Native support for the WordPress Customizer dashboard, standard admin frames, and active live previews for both **Elementor** and **Divi**.
+* **Autoptimize Compatibility:** Programmatically filters core optimization scripts to prevent `frontiers-iframe-buster.js` and associated structural inline CSS from being aggregated or broken during optimization passes.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you encounter issues, want to request features, or submit pull requests:
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a **Pull Request**.
+
+## 📄 License
+
+Distributed under the GPLv2 License. See `LICENSE` for more information.
+
+
 === Frontiers Simple Iframe Buster ===
 Contributors: vizkr, Frontiers
 Tags: iframe, x-frame-options, security, clickjacking, autoptimize
